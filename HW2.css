@@ -1,0 +1,243 @@
+/* Set margin and padding to 0, and use flexbox for layout */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: black;
+  }
+  
+  /* Style the header with a red background, white text, padding, and center alignment, and add a black border */
+  header {
+    background-color: black;
+    color: white;
+    padding: 2px;
+    text-align: center;
+    border: 2px solid blue; /* Add border to header */
+    width: 100%; /* Set the width to 100% to span the entire length */
+  }
+  
+  /* Use flexbox for main content layout */
+  main {
+    display: flex;
+    flex: 1;
+    background-color: black;
+  }
+  
+  /* Style the green main section with a green background, padding, and add a black border */
+  .green-main {
+    background-color: black;
+    color: white;
+    flex: 1;
+    padding: 20px;
+    border: 2px solid blue; /* Add border to green section */
+  }
+
+  .navTop{
+    list-style-type: none;
+   /*
+    border:1px dashed blue;
+  */
+    padding-left: 0.312rem;
+    text-align : left;
+    font-size: 2rem;
+    background-color: black;
+    margin:0px;
+    padding: 0.625rem;
+
+
+  }
+
+/*centgers the words in my container */
+
+.myContainer h6 {
+    text-align: center;
+    font-size: 50px;
+  }
+
+
+
+.navTop > li{
+    display: inline-block;
+    box-shadow: 2px 5px 5px blue, 2px 5px 5px gold;
+
+    position: relative;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.navTop>li:hover .dropdown-content {
+    display: block;
+}
+
+.myNavButton{
+    width: 8.75rem;
+    height: 1.875rem;
+    position: relative;
+    display: inline-block;
+}
+
+.gallery {
+   margin-bottom: 20px;
+*/
+}
+.gallery:hover {
+    border: 1px solid #777;
+}
+.gallery img {
+    width: 100%;
+}
+.desc {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.myContainer{
+    display: flex;
+    border: 1vw solid blue;
+    width: 100vw;
+    background-color: black;
+}
+
+.card{
+ /*   display: inline-block;*/
+
+    width: 40vw;
+    border: 1vw solid blue;
+    margin-right: 0.5rem;
+/*
+    width: 15rem;
+*/
+    box-shadow: 4px 4px 8px 0 blue,
+    4px 6px 20px 0 blue;
+    text-align: center;
+    background-color: black;
+    
+}
+
+.card h2{
+
+    font-size: 2vw;
+    /*
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.625rem;
+*/
+}
+.flex-container {
+    display: flex;
+    justify-content: flex-start; /* Adjust the spacing between the items */
+    font-size: 2rem;
+    width: fit-content;
+    height: fit-content;
+    background-color: black;
+}
+
+.flex-item {
+    margin-right: -10px; /* Adjust the negative margin to bring the items closer together */
+  }
+
+.logo {
+    font-size: 12px;
+    float: left;
+}
+.item {
+    width: fit-content; /* Using vw unit for width */
+    height: fit-content;
+    background-color: black;
+    border: 1vw solid blue;
+    margin: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item img {
+    width: 300px; /* Adjust the width as needed */
+    height: 250px; /* Adjust the height as needed */
+  }
+  
+  /* Style the black side section with a black background, white text, padding, and add a black border */
+  .black-section {
+    background-color: black;
+    color: white;
+    flex: 2; /* Updated to make the black section twice as big as the green section */
+    padding: 20px;
+    border: 2px solid blue; /* Add border to black section */
+    text-align: center;
+}
+
+.glow-move {
+    font-size: 36px;
+    text-align: center;
+    transform: translateX(-50%); /* Center the word horizontally */
+    animation: glow 1s ease-in-out infinite alternate, move 2s linear infinite;
+    color: blue; /* Set the color of the word to blue */
+  text-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px gold, 0 0 40px gold, 0 0 50px gold, 0 0 60px gold, 0 0 70px gold; /* Set the glowing effect to gold */
+  }
+  
+  @keyframes glow {
+  
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+/* Style the footer with a blue background, white text, padding, center alignment, and add a black border */
+footer {
+    background-color: blue;
+    color: white;
+    padding: 1%;
+    text-align: center;
+    border: 2px solid black; /* Add border to footer */
+    width: 100%
+  }
+  
+  /* Style the image container to display images in a vertical line */
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Define pulse animation for footer */
+@keyframes pulse {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.5;
+    }
+  }
+  /* Apply pulse animation to footer text */
+footer p {
+    animation: pulse 1s infinite alternate; /* Add pulse animation to footer text */
+  }
