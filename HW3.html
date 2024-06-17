@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="HW3.css">
+  <title>Shamar Homework 3</title>
+</head>
+<body>
+    <header>
+        <H1>SHAMAR's GREEK Store</H1>
+        <div class="logo">
+            <img src="GoldenRams.jpg" alt="Logo" width="67" class="logo">
+        </div>
+    </header>
+    <nav>
+        <ul class ="navTop"> 
+             <li><button class="myNavButton">CIO</button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li> ΜΦΣ </li>
+                        <li> ΚΚΨ </li>
+                    </ul>
+                </div>
+            </li>
+             <li><button class="myNavButton">D9</button></li>
+             <div class="dropdown-content">
+                <ul>
+                    <li> ΦΒΣ </li>
+                    <li> ΚΚΨ </li>
+                </ul>
+            </div>
+    </nav>
+    <main>
+        <aside id="option">
+            <form class="filters" action="/chooseBrand.php" method="post">
+                <label> You can narrow your search by the following checkboxes </label>
+                <p>_________________________________</p>
+                <input type="checkbox" id="Phi Beta Sigma" name="Phi Beta Sigma" value="Phi Beta Sigma">
+                <label for="Phi Beta Sigma">Phi Beta Sigma</label> <br>
+                <input type="checkbox" id="Kappa Kappa Psi" name="Kappa Kappa Psi" value="Kappa Kappa Psi">
+                <label for="Kappa Kappa Psi">Kappa Kappa Psi</label> <br>
+                <input type="checkbox" id="Mu Phi Sigma" name="Mu Phi Sigma" value="Mu Phi Sigma">
+                <label for="Mu Phi Sigma">Mu Phi Sigma</label> <br>
+                <input type="submit" value="Submit">	
+            </form>
+
+
+            <form class="filters" action="/chooseSize.php" method="post">
+                <label> You can narrow your search by choosing a t-shirt size </label><br>
+                <p>_________________________________</p>
+                <input type="checkbox" id="small" name="small" value="small">
+                <label for="small">Small</label> <br>
+                <input type="checkbox" id="large" name="large" value="large">
+                <label for="large">Large</label> <br>	
+                <input type="checkbox" id="Xlarge" name="Xlarge" value="Xlarge">
+                <label for="Xlarge">XLarge</label> <br>
+                <input type="checkbox" id="2XL" name="2XL" value="2XL">
+                <label for="2XL">2XL</label> <br>
+                <input type="submit" value="Submit">	
+            </form>
+        </aside>   
+        <section id="productShow">
+            <div class="myPage">
+        <div class="productCard">
+            <h3 class="productTile"> Kappa Kappa Psi Sweater</h3>	
+            <a href="kk.jpg" target="_blank"><img  class="productImage"  src="kk.jpg"></a>
+            <div class="productDesc">
+                This is a sweater for $35.
+            </div>
+        </div>
+        <div class="productCard">
+            <h3 class="productTile"> Kappa Kappa Psi Shirt</h3>	
+            <a href="KKPsi.jpg" target="_blank"><img  class="productImage"  src="KKPsi.jpg"></a>
+            <div class="productDesc">
+                This is a shirt for $15.
+            </div>
+        </div>
+        <div class="productCard">
+            <h3 class="productTile"> Kappa Kappa Psi Shirt (letterman)</h3>	
+            <a href="psi.jfif" target="_blank"><img  class="productImage"  src="psi.jfif"></a>
+            <div class="productDesc">
+                This is a shirt for $12.
+            </div>
+        </div>
+        <div class="productCard">
+            <h3 class="productTile"> Phi Beta Sigma Sweather </h3>	
+            <a href="phi .jpg" target="_blank"><img  class="productImage"  src="phi .jpg"></a>
+            <div class="productDesc">
+                This is a sweater for $39.
+            </div>
+        </div>
+        <div class="productCard">
+            <h3 class="productTile"> Phi Beta Sigma Baseball Shirt</h3>	
+            <a href="beta.jpg" target="_blank"><img  class="productImage"  src="beta.jpg"></a>
+            <div class="productDesc">
+                This is a jersery for $23.
+            </div>
+        </div>
+        <div class="productCard">
+            <h3 class="productTile">Phi Beta Sigma Shirt (IM THAT BLU)</h3>	
+            <a href="sigma.jpg" target="_blank"><img  class="productImage"  src="sigma.jpg"></a>
+            <div class="productDesc">
+                This is a shirt for $15.
+            </div>
+        </div>
+        <div class="productCard">
+            <h3 class="productTile"> Mu Phi Sigma Satin</h3>	
+            <a href="mu.jpg" target="_blank"><img  class="productImage"  src="mu.jpg"></a>
+            <div class="productDesc">
+                This jackets is 65$.
+            </div>
+        </div>
+        <div class="productCard">
+            <h3 class="productTile"> Mu Phi Sigma hoodie</h3>	
+            <a href="mu phi.jpg" target="_blank"><img  class="productImage"  src="mu phi.jpg"></a>
+            <div class="productDesc">
+                This is a hoodie for $56.
+        </div>
+        </div>
+        <div class="productCard">
+            <h3 class="productTile"> Mu Phi Sigma Jacket</h3>	
+            <a href="mu phi sigma.jpg" target="_blank"><img  class="productImage"  src="mu phi sigma.jpg"></a>
+            <div class="productDesc">
+                This jackets is 50$.
+        </div>
+        </div>
+        <!-- Add THREE more product cards -->
+<div class="productCard">
+    <h3 class="productTile">KKpsi jersery</h3>	
+    <a href="PSISHIT.JPG" target="_blank"><img class="productImage" src="PSISHIT.JPG"></a>
+    <div class="productDesc">
+        This is a sweater for $35.
+    </div>
+</div>
+
+<div class="productCard">
+    <h3 class="productTile">Sigma Robe</h3>	
+    <a href="sigmAROBE.JPG" target="_blank"><img class="productImage" src="sigmAROBE.JPG"></a>
+    <div class="productDesc">
+        This is a shirt for $15.
+    </div>
+</div>
+
+<div class="productCard">
+    <h3 class="productTile">Mu Phi Sigma Shorts</h3>	
+    <a href="mps shorts.jpg" target="_blank"><img class="productImage" src="mps shorts.jpg"></a>
+    <div class="productDesc">
+        This is a shirt for $15.
+    </div>
+</div>
+
+        </main>
+                <div class="black-section">
+            <h2>A Little Infomation About My Fraternities</h2>
+            <h2>Introduction</h2>
+            <p>
+                Phi Beta Sigma Fraternity, Inc. is a historically African American fraternity. It was founded at Howard University in Washington, D.C., on January 9, 1914, by three young African-American male students with nine other Howard students as charter members Beta Psi chapter was founded in Albany State University on April 15 1949.
+            </p>
+            <p>
+                Kappa Kappa Psi National Honorary Band Fraternity, is a fraternity for college and university band members in the United States. It was founded on November 27, 1919, on Thanksgiving Day, at Oklahoma Agricultural and Mechanical College. The Eta Kappa Chapter was chartered May 20th, 1978 and rechartered March 2nd,1997 at Albany State University.
+            </p>
+            <p>
+                On June 23, 2009 Chief Illustrious Founder, D'Extra Wiley along with 7 other brothers founded the fraterinty Mu Phi Sigma on the campus of Norfolk University. The Beta Epsilon Mu Chapter was chartered on December 3rd, 2021 in the city of Albany. 
+            </p>
+            <p class="glow-move">On The Shield</p>
+            <div class="imageContainer">
+                <img src="Kappa_Kappa_Psi_Coat_of_Arms.svg.png" alt="Image 1">
+                <img src="phibetasigma.png" alt="Image 2">
+                <img src="mu phi sigma.png" alt="Image 3">
+              </div>
+        <footer>
+          <p>This Website was made by the amazing mind of Shamar Swift</p>
+          <p>COPYRIGHT (c) KINGWEBZ</p>
+        </footer>
+      </body>
+      </html>
